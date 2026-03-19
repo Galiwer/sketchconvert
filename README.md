@@ -78,7 +78,7 @@ Frontend (sketch canvas)
 ### 1. Clone and create a virtual environment
 
 ```bash
-git clone https://github.com/your-username/facesketch.git
+git clone https://github.com/Galiwer/sketchconvert.git
 cd facesketch
 python3 -m venv .venv
 source .venv/bin/activate
@@ -235,4 +235,4 @@ facesketch/
 
 ## Author
 
-Built by [Your Name](https://github.com/your-username) · [LinkedIn](https://linkedin.com/in/your-profile)
+Built by [Your Name](https://github.com/Galiwer) · [LinkedIn](https://www.linkedin.com/in/omindukumara)
