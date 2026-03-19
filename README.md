@@ -235,4 +235,4 @@ facesketch/
 
 ## Author
 
-Built by [Your Name](https://github.com/Galiwer) · [LinkedIn](https://www.linkedin.com/in/omindukumara)
+Built by [Omindu Kumara](https://github.com/Galiwer) · [LinkedIn](https://www.linkedin.com/in/omindukumara)
