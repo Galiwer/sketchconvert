@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.env
+.venv
+venv/
+ENV/
+env/
+*.sqlite3
+*.db
+*.log
+
+# VSCode
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+*.env
+.env.*
+
+# Frontend build
+frontend/my-next-app/.next/
+frontend/my-next-app/out/
+frontend/my-next-app/.turbo/
+
+# Misc
+*.bak
+*.swp
+*.tmp
+
+# Ignore uploads (if not needed in repo)
+uploads/
