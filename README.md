@@ -75,6 +75,83 @@ Frontend (sketch canvas)
 
 ## Setup
 
+---
+
+## Frontend (Next.js)
+
+The frontend is a Next.js 14+ app with TypeScript, Tailwind CSS, NextAuth.js authentication, and full integration with the FaceSketch backend.
+
+### Features
+
+- **Authentication**: NextAuth.js with email/password and Google OAuth
+- **Canvas**: Advanced drawing tools (brush, eraser, colors, undo/redo)
+- **Generation**: Real-time sketch → face generation with progress tracking
+- **Gallery**: View and manage your generation history
+- **Profile**: Customize default style and prompt preferences
+- **Responsive**: Mobile-friendly UI with Tailwind CSS
+
+### Setup
+
+1. Install dependencies:
+  ```bash
+  cd frontend/my-next-app
+  npm install
+  ```
+2. Configure environment:
+  ```bash
+  cp .env.example .env.local
+  # Edit .env.local with your backend URL and secrets
+  ```
+3. Run development server:
+  ```bash
+  npm run dev
+  # Visit http://localhost:3000
+  ```
+
+#### Google OAuth (optional)
+Set up credentials in Google Cloud Console and add them to `.env.local`.
+
+### Project Structure
+
+```
+src/
+├── app/
+│   ├── api/auth/[...nextauth]/route.ts  # NextAuth config
+│   ├── components/
+│   │   ├── AuthProvider.tsx
+│   │   ├── LandingPage.tsx
+│   │   └── SketchCanvas.tsx
+│   ├── canvas/page.tsx
+│   ├── gallery/page.tsx
+│   ├── login/page.tsx
+│   ├── profile/page.tsx
+│   ├── register/page.tsx
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── globals.css
+└── ...
+```
+
+### Pages
+
+**Public:** `/`, `/login`, `/register`
+
+**Protected:** `/canvas`, `/gallery`, `/profile`
+
+### API Integration
+
+The frontend communicates with the backend via REST endpoints (see backend section for details). Set `NEXT_PUBLIC_API_BASE` in `.env.local` to your backend URL.
+
+### Build & Deploy
+
+```bash
+npm run build
+npm start
+# Or deploy to Vercel
+```
+
+---
+
 ### 1. Clone and create a virtual environment
 
 ```bash
